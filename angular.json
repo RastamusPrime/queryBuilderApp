@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "derp": {
+    "queryBuilderApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/derp",
+            "outputPath": "dist/queryBuilderApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "derp:build"
+            "browserTarget": "queryBuilderApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "derp:build:production"
+              "browserTarget": "queryBuilderApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "derp:build"
+            "browserTarget": "queryBuilderApp:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "derp:serve"
+            "devServerTarget": "queryBuilderApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "derp:serve:production"
+              "devServerTarget": "queryBuilderApp:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "derp"
+  "defaultProject": "queryBuilderApp"
 }
